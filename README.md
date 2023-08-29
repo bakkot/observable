@@ -315,7 +315,7 @@ interface Observable {
   constructor(SubscribeCallback callback);
   undefined subscribe(Observer observer);
 
-  undefined finally(VoidFunction callback);
+  Observable finally(VoidFunction callback);
 
   // Observable-returning operators. See "Operators" section below.
   // TODO: Use more specific callback types than `Function`.
